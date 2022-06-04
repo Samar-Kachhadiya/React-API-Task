@@ -1,0 +1,80 @@
+body
+{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    background-color: #222323;
+}
+.fan h1
+{
+    color:#8a8b90;
+}
+label
+{
+    color:#8a8b90;
+    margin-left:-60%;
+    padding:10px;
+}
+.form::placeholder
+{
+    color:#39d389;
+    
+
+}
+.form
+{
+    border: 2px solid #39d389;
+    border-radius:50px;
+    background-color: #222323;
+    color: white;
+}
+ h6
+{ 
+  color:#8a8b90;
+  font-size: 15px;
+  margin-top: -3.5%;
+}
+span 
+{
+    color:#39d389;
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+}
+.signup
+{
+    background-color: #39d389;
+    border-radius: 50px;
+}
+.term
+{
+  margin-left:-45%;
+  margin-top:3%;
+}
+.nav-item
+{
+    width:12%;
+    background-color: #39d389;
+    border-radius: 50px;
+    margin-left:38%;
+    margin-top:2%;
+}
+.nav-item a{
+    color:black;
+}
+.nav-item:hover{
+    background-color: white;
+}
+.nav-item a:hover{
+    color:black;
+}
+.talent
+{
+    margin-top:-3%;
+    margin-left:50%;
+}
+#pills-talent
+{
+    display:none;
+}
