@@ -110,7 +110,7 @@ function Register()
         <div className="fan col-md-6 mt-5">
         <h1 className="">Create Your Talent Account</h1>
             <br></br>
-            <form>
+            <form id="frm1">
                
             <label>First name*</label>
             <input value={first_name} onChange={(e)=>setFirstname(e.target.value)} type="text" className="form form-control w-75" placeholder="First name"  data-bvalidator="required,alpha"/>
@@ -122,7 +122,7 @@ function Register()
             <input  value={email} onChange={(e)=>setEmail(e.target.value)} type="text" className="form form-control w-75" placeholder="Email" data-bvalidator="required,email"/>
             <label>Password*</label>
             <input  value={password} onChange={(e)=>setPassword(e.target.value)} type="password" className="form form-control w-75" placeholder="Password" data-bvalidator="required,maxlen[10],minlen[4]"/>
-            <input type="checkbox"  className="term" required/><h6>I agree to the <a>Terms and Conditions.</a></h6>
+            <input type="checkbox"  className="term" data-bvalidator="required"/><h6>I agree to the <a>Terms and Conditions.</a></h6>
             <button onClick={talentsignUp} className="signup btn w-25 text-black mt-3">Sign Up</button>
             </form>
         </div>
