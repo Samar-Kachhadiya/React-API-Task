@@ -113,15 +113,15 @@ function Register()
             <form>
                
             <label>First name*</label>
-            <input value={first_name} onChange={(e)=>setFirstname(e.target.value)} type="text" className="form form-control w-75" placeholder="First name" required/>
+            <input value={first_name} onChange={(e)=>setFirstname(e.target.value)} type="text" className="form form-control w-75" placeholder="First name"  data-bvalidator="required,alpha"/>
             <label>Last name*</label>
-            <input  value={last_name} onChange={(e)=>setLastname(e.target.value)} type="text" className="form form-control w-75" placeholder="Last name" required/>
+            <input  value={last_name} onChange={(e)=>setLastname(e.target.value)} type="text" className="form form-control w-75" placeholder="Last name" data-bvalidator="required,alpha"/>
             <label>Username*</label>
-            <input  value={username} onChange={(e)=>setUsername(e.target.value)} type="text"  className="form form-control w-75" placeholder="Username" required/>
+            <input  value={username} onChange={(e)=>setUsername(e.target.value)} type="text"  className="form form-control w-75" placeholder="Username" data-bvalidator="required"/>
             <label>Email* </label>
-            <input  value={email} onChange={(e)=>setEmail(e.target.value)} type="text" className="form form-control w-75" placeholder="Email" required/>
+            <input  value={email} onChange={(e)=>setEmail(e.target.value)} type="text" className="form form-control w-75" placeholder="Email" data-bvalidator="required,email"/>
             <label>Password*</label>
-            <input  value={password} onChange={(e)=>setPassword(e.target.value)} type="password" className="form form-control w-75" placeholder="Password" required/>
+            <input  value={password} onChange={(e)=>setPassword(e.target.value)} type="password" className="form form-control w-75" placeholder="Password" data-bvalidator="required,maxlen[10],minlen[4]"/>
             <input type="checkbox"  className="term" required/><h6>I agree to the <a>Terms and Conditions.</a></h6>
             <button onClick={talentsignUp} className="signup btn w-25 text-black mt-3">Sign Up</button>
             </form>
